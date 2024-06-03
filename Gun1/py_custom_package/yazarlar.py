@@ -1,0 +1,1 @@
+isimler=["Ali","Veli","Ayşe"]
