@@ -16133,7 +16133,7 @@ memory usage: 175.0+ bytes
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2882529388112 2882532165968
+<pre>2280620744144 2280621752720
 False
 </pre>
 </div>
@@ -16164,7 +16164,7 @@ False
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ekip</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># üstten kaç satır çekilecek</span>
 <span class="n">ekip</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#alttan kaç  satır</span>
-<span class="n">ekip</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#rastgele kaç satır</span>
+<span class="n">ekip</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#rastgele kaç satır7</span>
 </pre></div>
 
      </div>
@@ -16212,17 +16212,17 @@ False
   </thead>
   <tbody>
     <tr>
-      <th>Bolu</th>
-      <td>4</td>
-      <td>Fatma</td>
-      <td>K</td>
-      <td>350.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
       <th>Bursa</th>
       <td>2</td>
       <td>Veli</td>
+      <td>E</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>İzmir</th>
+      <td>5</td>
+      <td>Tonguç</td>
       <td>E</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -16262,7 +16262,7 @@ False
 
 <span class="c1">#istatistiksel değler. Sayısal alanlar için üretir.</span>
 <span class="n">ekip</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-<span class="n">ekip</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="c1">#tranpose almak daha kullanışlı olabiliyor</span>
+<span class="n">ekip</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span> <span class="c1">#tranpose almak daha kullanışlı olabiliyor. exclude ile belli alanlar hariç tutulabilir.</span>
 <span class="c1">#ekip.corr() #sayıal kolonların Korelasyonunu verir. metinsel kolonlar olduğu için hata veriyor burada.</span>
 </pre></div>
 
@@ -16714,7 +16714,7 @@ dtype: bool</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="De%C4%9Ferlere-Ula%C5%9Fmak">De&#287;erlere Ula&#351;mak<a class="anchor-link" href="#De%C4%9Ferlere-Ula%C5%9Fmak">&#182;</a></h3><p><img src="PandasDegerlereUlasmak.png" alt="alt text" /></p>
+<h3 id="De%C4%9Ferlere-Ula%C5%9Fmak">De&#287;erlere Ula&#351;mak<a class="anchor-link" href="#De%C4%9Ferlere-Ula%C5%9Fmak">&#182;</a></h3><p><img src="PandasDegerlereUlasmak2.png" alt="alt text" /></p>
 
 </div>
 </div>
@@ -18572,6 +18572,99 @@ dtype: bool</pre>
 
 </div>
 
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ekip</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;number&quot;</span><span class="p">)</span> <span class="c1">#sayısal kolonları getirir.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>Uretim</th>
+    </tr>
+    <tr>
+      <th>DepId</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>120.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>250.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>350.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -19721,7 +19814,7 @@ dtype: object</pre>
 <li><code>apply()</code></li>
 </ul>
 </li>
-<li>Transform fonksiyonu kolon adı belirterek işlem yapabiliriz.<ul>
+<li>Transform fonksiyonu ile kolon adı belirterek işlem yapabiliriz.<ul>
 <li><code>transform()</code></li>
 </ul>
 </li>
@@ -19764,10 +19857,10 @@ dtype: object</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[4, 0, 2, 4, 0],
-       [4, 3, 2, 3, 3],
-       [4, 4, 2, 4, 3],
-       [0, 4, 2, 3, 1]])</pre>
+<pre>array([[0, 1, 2, 3, 2],
+       [3, 0, 2, 0, 4],
+       [0, 2, 3, 1, 4],
+       [0, 0, 4, 0, 2]])</pre>
 </div>
 
 </div>
@@ -19883,35 +19976,35 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>row_0</th>
-      <td>4</td>
       <td>0</td>
+      <td>1</td>
       <td>2</td>
-      <td>4</td>
-      <td>0</td>
+      <td>3</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>row_1</th>
-      <td>4</td>
       <td>3</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <td>0</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>row_2</th>
-      <td>4</td>
-      <td>4</td>
+      <td>0</td>
       <td>2</td>
-      <td>4</td>
       <td>3</td>
+      <td>1</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>0</td>
+      <td>0</td>
       <td>4</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -19993,34 +20086,34 @@ dtype: object</pre>
     <tr>
       <th>row_0</th>
       <td>çift</td>
+      <td>tek</td>
       <td>çift</td>
-      <td>çift</td>
-      <td>çift</td>
+      <td>tek</td>
       <td>çift</td>
     </tr>
     <tr>
       <th>row_1</th>
-      <td>çift</td>
       <td>tek</td>
       <td>çift</td>
-      <td>tek</td>
-      <td>tek</td>
+      <td>çift</td>
+      <td>çift</td>
+      <td>çift</td>
     </tr>
     <tr>
       <th>row_2</th>
       <td>çift</td>
       <td>çift</td>
-      <td>çift</td>
-      <td>çift</td>
       <td>tek</td>
+      <td>tek</td>
+      <td>çift</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>çift</td>
       <td>çift</td>
       <td>çift</td>
-      <td>tek</td>
-      <td>tek</td>
+      <td>çift</td>
+      <td>çift</td>
     </tr>
   </tbody>
 </table>
@@ -20101,35 +20194,35 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>row_0</th>
-      <td>4</td>
       <td>0</td>
+      <td>1</td>
       <td>2</td>
-      <td>4</td>
-      <td>0</td>
+      <td>3</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>row_1</th>
-      <td>4</td>
       <td>3</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <td>0</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>row_2</th>
-      <td>4</td>
-      <td>4</td>
+      <td>0</td>
       <td>2</td>
-      <td>4</td>
       <td>3</td>
+      <td>1</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>0</td>
+      <td>0</td>
       <td>4</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -20176,9 +20269,9 @@ dtype: object</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>row_0    4
-row_1    2
-row_2    2
+<pre>row_0    3
+row_1    4
+row_2    4
 row_3    4
 dtype: int32</pre>
 </div>
@@ -21969,6 +22062,400 @@ Name: Uretim, dtype: float16</pre>
       <td>2021</td>
       <td>K2</td>
       <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%C3%87apraz-Tablo">&#199;apraz Tablo<a class="anchor-link" href="#%C3%87apraz-Tablo">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Yil</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">Kategori</span><span class="p">)</span> <span class="c1">#adetleri getirir.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Yil</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">Kategori</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Satis</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">margins_name</span><span class="o">=</span><span class="s2">&quot;Toplam&quot;</span><span class="p">)</span> <span class="c1">#margin ile toplam alanı ekler.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Kategori</th>
+      <th>K1</th>
+      <th>K2</th>
+      <th>K3</th>
+      <th>Toplam</th>
+    </tr>
+    <tr>
+      <th>Yil</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019</th>
+      <td>1200</td>
+      <td>2546</td>
+      <td>0</td>
+      <td>3746</td>
+    </tr>
+    <tr>
+      <th>2020</th>
+      <td>0</td>
+      <td>1440</td>
+      <td>0</td>
+      <td>1440</td>
+    </tr>
+    <tr>
+      <th>2021</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1018</td>
+      <td>1018</td>
+    </tr>
+    <tr>
+      <th>Toplam</th>
+      <td>1200</td>
+      <td>3986</td>
+      <td>1018</td>
+      <td>6204</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Cat-ile-kategorik-verileri-i%C5%9Fleyebiliriz.">Cat ile kategorik verileri i&#351;leyebiliriz.<a class="anchor-link" href="#Cat-ile-kategorik-verileri-i%C5%9Fleyebiliriz.">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">&quot;Kategori&quot;</span><span class="p">:</span><span class="s2">&quot;category&quot;</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+
+<span class="c1">#</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Kategori&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span> <span class="c1">#kategori alanındaki kategorileri getirir.</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Kategori&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">codes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0    0
+1    1
+2    2
+3    1
+4    2
+dtype: int8</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Kategori&quot;</span><span class="p">])</span> <span class="c1">#Kategori alanını dummy değişkenlere çevirir.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Yil</th>
+      <th>Satis</th>
+      <th>Kategori_K1</th>
+      <th>Kategori_K2</th>
+      <th>Kategori_K3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019</td>
+      <td>1200</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2020</td>
+      <td>1440</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021</td>
+      <td>544</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2019</td>
+      <td>2546</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021</td>
+      <td>474</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Cut-ile-kategorik-de%C4%9Fi%C5%9Fkenler-olu%C5%9Fturabiliriz.">Cut ile kategorik de&#287;i&#351;kenler olu&#351;turabiliriz.<a class="anchor-link" href="#Cut-ile-kategorik-de%C4%9Fi%C5%9Fkenler-olu%C5%9Fturabiliriz.">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#kolon olarak ekleyebiliriz.</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;SatisDurum&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Satis</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Düşük&quot;</span><span class="p">,</span><span class="s2">&quot;Orta&quot;</span><span class="p">,</span><span class="s2">&quot;Yüksek&quot;</span><span class="p">])</span> <span class="c1">#bins=[0,500,1000,2000,3000] gibi de verilebilir.</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;SatisDurum&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Satis</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">3000</span><span class="p">],</span> <span class="n">right</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#right=False ile sağ sınırı dahil etmez.</span>
+
+<span class="c1">#</span>
+<span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Yil</th>
+      <th>Kategori</th>
+      <th>Satis</th>
+      <th>SatisDurum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019</td>
+      <td>K1</td>
+      <td>1200</td>
+      <td>[1000, 2000)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2020</td>
+      <td>K2</td>
+      <td>1440</td>
+      <td>[1000, 2000)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021</td>
+      <td>K3</td>
+      <td>544</td>
+      <td>[500, 1000)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2019</td>
+      <td>K2</td>
+      <td>2546</td>
+      <td>[2000, 3000)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021</td>
+      <td>K3</td>
+      <td>474</td>
+      <td>[0, 500)</td>
     </tr>
   </tbody>
 </table>
