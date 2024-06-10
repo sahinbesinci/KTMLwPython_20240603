@@ -16133,7 +16133,7 @@ memory usage: 175.0+ bytes
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1537738581968 1537762404368
+<pre>2882529388112 2882532165968
 False
 </pre>
 </div>
@@ -16213,10 +16213,10 @@ False
   <tbody>
     <tr>
       <th>Bolu</th>
-      <td>3</td>
-      <td>Ayşe</td>
-      <td>None</td>
-      <td>250.0</td>
+      <td>4</td>
+      <td>Fatma</td>
+      <td>K</td>
+      <td>350.0</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -16771,18 +16771,6 @@ dtype: bool</pre>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;Ali&#39;</pre>
-</div>
-
-</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
@@ -19733,6 +19721,10 @@ dtype: object</pre>
 <li><code>apply()</code></li>
 </ul>
 </li>
+<li>Transform fonksiyonu kolon adı belirterek işlem yapabiliriz.<ul>
+<li><code>transform()</code></li>
+</ul>
+</li>
 </ul>
 <blockquote>
 <p><code>map() &gt; apply() &gt; applymap()</code> seriden - df'e kullanım</p>
@@ -19772,10 +19764,10 @@ dtype: object</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[4, 1, 1, 2, 3],
-       [3, 2, 2, 0, 1],
-       [0, 3, 3, 1, 0],
-       [0, 2, 2, 4, 0]])</pre>
+<pre>array([[4, 0, 2, 4, 0],
+       [4, 3, 2, 3, 3],
+       [4, 4, 2, 4, 3],
+       [0, 4, 2, 3, 1]])</pre>
 </div>
 
 </div>
@@ -19892,34 +19884,34 @@ dtype: object</pre>
     <tr>
       <th>row_0</th>
       <td>4</td>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
+      <td>4</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>row_1</th>
+      <td>4</td>
       <td>3</td>
       <td>2</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>row_2</th>
-      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
       <td>3</td>
-      <td>3</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>0</td>
-      <td>2</td>
-      <td>2</td>
       <td>4</td>
-      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -20001,34 +19993,34 @@ dtype: object</pre>
     <tr>
       <th>row_0</th>
       <td>çift</td>
-      <td>tek</td>
-      <td>tek</td>
       <td>çift</td>
-      <td>tek</td>
+      <td>çift</td>
+      <td>çift</td>
+      <td>çift</td>
     </tr>
     <tr>
       <th>row_1</th>
+      <td>çift</td>
       <td>tek</td>
       <td>çift</td>
-      <td>çift</td>
-      <td>çift</td>
+      <td>tek</td>
       <td>tek</td>
     </tr>
     <tr>
       <th>row_2</th>
       <td>çift</td>
-      <td>tek</td>
-      <td>tek</td>
-      <td>tek</td>
       <td>çift</td>
+      <td>çift</td>
+      <td>çift</td>
+      <td>tek</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>çift</td>
       <td>çift</td>
       <td>çift</td>
-      <td>çift</td>
-      <td>çift</td>
+      <td>tek</td>
+      <td>tek</td>
     </tr>
   </tbody>
 </table>
@@ -20110,34 +20102,34 @@ dtype: object</pre>
     <tr>
       <th>row_0</th>
       <td>4</td>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
+      <td>4</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>row_1</th>
+      <td>4</td>
       <td>3</td>
       <td>2</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
+      <td>3</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>row_2</th>
-      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
       <td>3</td>
-      <td>3</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>row_3</th>
       <td>0</td>
-      <td>2</td>
-      <td>2</td>
       <td>4</td>
-      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -20184,9 +20176,9 @@ dtype: object</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>row_0    3
-row_1    3
-row_2    3
+<pre>row_0    4
+row_1    2
+row_2    2
 row_3    4
 dtype: int32</pre>
 </div>
@@ -20254,6 +20246,89 @@ Bolu       AYŞE
 Bolu      FATMA
 İzmir    TONGUÇ
 Name: Ad, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df.transform(lambda x: x*2) #kolon bazında çalışır.</span>
+<span class="n">ekip</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;Uretim&quot;</span><span class="p">:</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">*</span><span class="mf">1.20</span><span class="p">})</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Uretim</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bursa</th>
+      <td>144.0</td>
+    </tr>
+    <tr>
+      <th>Bursa</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>Bolu</th>
+      <td>300.0</td>
+    </tr>
+    <tr>
+      <th>Bolu</th>
+      <td>420.0</td>
+    </tr>
+    <tr>
+      <th>İzmir</th>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
